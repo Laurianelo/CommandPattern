@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveLeftCommand : ICommand
 {
     private Transform _player;
-    private float _speed;
+    private float _speed ;
 
     public MoveLeftCommand(Transform player, float speed)
     {
@@ -19,6 +19,6 @@ public class MoveLeftCommand : ICommand
 
     public void Undo()
     {
-        throw new System.NotImplementedException();
+        _player.Translate(Vector3.right * _speed * Time.deltaTime);
     }
 }

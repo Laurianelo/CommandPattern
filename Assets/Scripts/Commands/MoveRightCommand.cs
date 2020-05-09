@@ -19,6 +19,6 @@ public class MoveRightCommand : ICommand
 
     public void Undo()
     {
-        throw new System.NotImplementedException();
+        _player.Translate(Vector3.left * _speed * Time.deltaTime);
     }
 }

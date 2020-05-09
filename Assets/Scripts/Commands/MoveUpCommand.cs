@@ -20,6 +20,6 @@ public class MoveUpCommand : ICommand
 
     public void Undo()
     {
-        throw new System.NotImplementedException();
+        _player.Translate(Vector3.down * _speed * Time.deltaTime);
     }
 }

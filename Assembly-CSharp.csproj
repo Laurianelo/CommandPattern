@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Commands\MoveRightCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\MoveUpCommand.cs" />
     <Compile Include="Assets\Scripts\Interface\ICommand.cs" />
+    <Compile Include="Assets\Scripts\Managers\CommandManager.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Projects/CommandPattern/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

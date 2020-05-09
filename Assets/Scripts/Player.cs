@@ -18,25 +18,32 @@ public class Player : MonoBehaviour
             //move up command
             moveUp = new MoveUpCommand(this.transform, _speed);
             moveUp.Execute();
+            CommandManager.Instance.AddCommand(moveUp);
+            
         }
         else if(Input.GetKey(KeyCode.S))
         {
             //move down
             moveDown = new MoveDownCommand(this.transform, _speed);
             moveDown.Execute();
+            CommandManager.Instance.AddCommand(moveDown);
         }
         else if (Input.GetKey(KeyCode.Q))
         {
             //move left
             moveLeft = new MoveLeftCommand(this.transform, _speed);
             moveLeft.Execute();
+
+            CommandManager.Instance.AddCommand(moveLeft);
         }
         else if (Input.GetKey(KeyCode.D))
         {
             //move right
             moveRight = new MoveRightCommand(this.transform, _speed);
             moveRight.Execute();
-             
+
+            CommandManager.Instance.AddCommand(moveRight);
+
         }
 
 

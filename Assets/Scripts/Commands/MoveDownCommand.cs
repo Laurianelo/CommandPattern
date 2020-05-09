@@ -19,7 +19,7 @@ public class MoveDownCommand : ICommand
 
     public void Undo()
     {
-        throw new System.NotImplementedException();
+        _player.Translate(Vector3.up * _speed * Time.deltaTime);
     }
 
   
